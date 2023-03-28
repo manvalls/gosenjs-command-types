@@ -154,7 +154,7 @@ export type TransactionSubCommand =
   | WaitSubCommand
 
 export type TransactionCommand = {
-  tx: TransactionSubCommand[],
+  tx?: TransactionSubCommand[],
   hash?: string,
   routine?: number,
   once?: boolean,
