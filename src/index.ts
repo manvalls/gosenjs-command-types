@@ -2,7 +2,6 @@
 export type RunCommand = {
   run: string,
   routine?: number,
-  dynamic?: boolean,
 }
 
 export type StartRoutineCommand = {
