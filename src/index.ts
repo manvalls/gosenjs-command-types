@@ -9,6 +9,10 @@ export type StartRoutineCommand = {
   routine?: number,
 }
 
+export type EndRoutineCommand = {
+  endRoutine: number,
+}
+
 export type SelectorSubCommand = {
   id: number,
   selector: string,
@@ -162,4 +166,5 @@ export type TransactionCommand = {
 export type Command =
   | RunCommand
   | StartRoutineCommand
+  | EndRoutineCommand
   | TransactionCommand
