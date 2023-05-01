@@ -11,6 +11,7 @@ export type StartRoutineCommand = {
 
 export type EndRoutineCommand = {
   endRoutine: number,
+  routine?: undefined,
 }
 
 export type SelectorSubCommand = {
