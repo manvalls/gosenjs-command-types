@@ -27,6 +27,19 @@ export type SelectorAllSubCommand = {
   parent?: number,
 }
 
+export type IdSubCommand = {
+  id: number,
+  elementId: string,
+}
+
+export type HeadSubCommand = {
+  head: number,
+}
+
+export type BodySubCommand = {
+  body: number,
+}
+
 export type FragmentSubCommand = {
   id: number,
   fragment: string,
@@ -135,6 +148,9 @@ export type WaitSubCommand = {
 export type TransactionSubCommand =
   | SelectorSubCommand
   | SelectorAllSubCommand
+  | IdSubCommand
+  | HeadSubCommand
+  | BodySubCommand
   | FragmentSubCommand
   | ContentSubCommand
   | ParentSubCommand
